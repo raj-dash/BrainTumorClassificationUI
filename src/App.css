@@ -17,17 +17,21 @@ body {
   padding: 1rem;
   align-items: center;
   text-align: center;
+  font-size: 24px;
+  text-decoration: underline;
 }
 
 .form-container {
+  padding: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   border: #ffffff solid 2px;
   border-radius: 1.5rem;
   min-height: 70vh;
   /* max-width: 30rem; */
   min-width: 30rem;
+  text-align: center;
 }
 
 .container {
@@ -35,4 +39,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.label {
+  font-size: 32px;
 }
