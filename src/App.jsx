@@ -1,7 +1,13 @@
-// import './App.css'
+import "./App.css";
+
+import Title from "./components/Title";
 
 function App() {
-  return <>Hello World</>;
+  return (
+    <>
+      <Title />
+    </>
+  );
 }
 
 export default App;
