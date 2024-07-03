@@ -18,3 +18,21 @@ body {
   align-items: center;
   text-align: center;
 }
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #ffffff solid 2px;
+  border-radius: 1.5rem;
+  min-height: 70vh;
+  /* max-width: 30rem; */
+  min-width: 30rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
