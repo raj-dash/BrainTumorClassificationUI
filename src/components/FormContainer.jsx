@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ImageUpload from "./ImageUpload";
 import Label from "./Label";
+import Submit from "./Submit";
 
 function FormContainer() {
   const [selectedFile, setSelectedFile] = useState();
@@ -14,6 +15,7 @@ function FormContainer() {
               selectedFile={selectedFile}
               setSelectedFile={setSelectedFile}
             />
+            <Submit selectedFile={selectedFile} />
           </form>
         </div>
       </div>
