@@ -1,13 +1,16 @@
+import { useState } from "react";
 import "./App.css";
 import FormContainer from "./components/FormContainer";
 
 import Title from "./components/Title";
 
 function App() {
+  const [state, setState] = useState("Input");
+
   return (
     <>
       <Title />
-      <FormContainer />
+      {state === "Input" ? <FormContainer /> : "hello"}
     </>
   );
 }
