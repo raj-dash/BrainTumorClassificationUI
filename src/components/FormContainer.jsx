@@ -1,8 +1,7 @@
 import { useState } from "react";
 
-function FormContainer() {
+function FormContainer({ selectedFile, setSelectedFile, setRender }) {
   const [text, setText] = useState("");
-  const [selectedFile, setSelectedFile] = useState(null);
 
   function handleFileSelect(event) {
     setSelectedFile(event.target.files[0]);
@@ -22,6 +21,8 @@ function FormContainer() {
       })
         .then((response) => response.json())
         .then((data) => getTumor(data["prediction"]));
+
+      setRender("Reply");
 
       // if (response.ok) {
       //   console.log("file uploaded successfully");

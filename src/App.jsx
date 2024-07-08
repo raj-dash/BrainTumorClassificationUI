@@ -3,14 +3,24 @@ import "./App.css";
 import FormContainer from "./components/FormContainer";
 
 import Title from "./components/Title";
+import Reply from "./components/Reply";
 
 function App() {
-  const [state, setState] = useState("Input");
+  const [render, setRender] = useState("Input");
+  const [selectedFile, setSelectedFile] = useState(null);
 
   return (
     <>
       <Title />
-      {state === "Input" ? <FormContainer /> : "hello"}
+      {render === "Input" ? (
+        <FormContainer
+          selectedFile={selectedFile}
+          setSelectedFile={setSelectedFile}
+          setRender={setRender}
+        />
+      ) : (
+        <Reply />
+      )}
     </>
   );
 }
