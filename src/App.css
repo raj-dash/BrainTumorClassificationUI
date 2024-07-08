@@ -43,4 +43,10 @@ body {
 
 .label {
   font-size: 32px;
+  padding-top: 1rem;
+}
+
+.reply-container {
+  display: flex;
+  flex-direction: column;
 }

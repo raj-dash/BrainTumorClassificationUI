@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-function FormContainer({ selectedFile, setSelectedFile, setRender }) {
-  const [text, setText] = useState("");
-
+function FormContainer({ selectedFile, setSelectedFile, setRender, setTumor }) {
   function handleFileSelect(event) {
     setSelectedFile(event.target.files[0]);
   }
@@ -48,7 +46,7 @@ function FormContainer({ selectedFile, setSelectedFile, setRender }) {
       case "pituitary_tumor":
         tumor = "Pituitary Tumor";
     }
-    setText(tumor);
+    setTumor(tumor);
   }
 
   return (
@@ -64,9 +62,6 @@ function FormContainer({ selectedFile, setSelectedFile, setRender }) {
             </div>
             <div>
               <button type="submit">Submit</button>
-            </div>
-            <div>
-              <h2>{text}</h2>
             </div>
           </form>
         </div>

@@ -8,6 +8,7 @@ import Reply from "./components/Reply";
 function App() {
   const [render, setRender] = useState("Input");
   const [selectedFile, setSelectedFile] = useState(null);
+  const [tumor, setTumor] = useState("");
 
   return (
     <>
@@ -17,9 +18,14 @@ function App() {
           selectedFile={selectedFile}
           setSelectedFile={setSelectedFile}
           setRender={setRender}
+          setTumor={setTumor}
         />
       ) : (
-        <Reply />
+        <Reply
+          selectedFile={selectedFile}
+          tumor={tumor}
+          setRender={setRender}
+        />
       )}
     </>
   );
