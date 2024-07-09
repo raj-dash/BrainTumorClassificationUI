@@ -3,14 +3,19 @@
 * {
   padding: 0;
   margin: 0;
-  background: #1f1f1f;
-  color: rgb(230, 230, 230)
+  color: rgb(0, 0, 0)
+}
+
+html {
+  height: 100%
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   font: 400;
   font-style: normal;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,180,255,1) 61%, rgba(0,133,255,1) 100%);
 }
 
 .title {
