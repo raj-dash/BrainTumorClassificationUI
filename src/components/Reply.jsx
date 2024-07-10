@@ -9,12 +9,14 @@ function Reply({ selectedFile, tumor, setRender }) {
         <div className="form-container">
           <form action="" onSubmit={handleSubmit}>
             <div className="reply-container">
-              <img src={URL.createObjectURL(selectedFile)} alt="" />
+              <img src={URL.createObjectURL(selectedFile)} alt="MRI" />
               <label className="label" htmlFor="tumor">
                 {tumor}
               </label>
               <div>
-                <button>Go back</button>
+                <button className="button-81" role="button" type="submit">
+                  Go Back
+                </button>
               </div>
             </div>
           </form>

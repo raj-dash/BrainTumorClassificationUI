@@ -64,7 +64,9 @@ function FormContainer({ selectedFile, setSelectedFile, setRender, setTumor }) {
               <input type="file" name="image" onChange={handleFileSelect} />
             </div>
             <div>
-              <button type="submit">Submit</button>
+              <button className="button-81" role="button" type="submit">
+                Upload
+              </button>
             </div>
           </form>
         </div>
