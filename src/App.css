@@ -37,12 +37,9 @@ body {
   min-height: 50vh;
   max-width: max-content;
   min-width: 30rem;
-  background-image: url("assets/7514780.png");
-  background-size: cover;
-}
-
-.form-container::before {
-  background-color: rgba(0, 0, 0, 0.6);
+  background: #fff
+  /* background-image: url("assets/7514780.png");
+  background-size: cover; */
 }
 
 .form {
@@ -67,13 +64,13 @@ body {
 .label {
   font-size: 18px;
   padding-top: 1rem;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .label-mri {
   font-size: 48px;
   font-weight: 600;
-  color: #ffffff;
+  /* color: #ffffff; */
   /* padding-top: 1rem; */
 }
 
