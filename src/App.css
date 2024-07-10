@@ -37,9 +37,8 @@ body {
   min-height: 50vh;
   max-width: max-content;
   min-width: 30rem;
-  background: #fff
-  /* background-image: url("assets/7514780.png");
-  background-size: cover; */
+  background: rgb(227,194,254);
+  background: linear-gradient(180deg, rgba(227,194,254,1) 0%, rgba(80,120,242,1) 100%);
 }
 
 .form {
