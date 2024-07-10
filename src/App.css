@@ -31,13 +31,24 @@ body {
   padding: 2rem;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  border: #ffffff solid 2px;
+  /* border: #ffffff solid 2px; */
   border-radius: 1.5rem;
   text-align: center;
   min-height: 50vh;
   max-width: max-content;
   min-width: 30rem;
+  background-image: url("assets/7514780.png");
+  background-size: cover;
+}
+
+.form-container::before {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
@@ -56,21 +67,17 @@ body {
 .label {
   font-size: 18px;
   padding-top: 1rem;
+  color: #ffffff;
 }
 
 .label-mri {
   font-size: 48px;
   font-weight: 600;
+  color: #ffffff;
   /* padding-top: 1rem; */
 }
 
 .reply-container {
   display: flex;
   flex-direction: column;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
