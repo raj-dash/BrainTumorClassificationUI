@@ -20,10 +20,11 @@ body {
 
 .title {
   padding: 1rem;
+  padding-top: 4rem;
   align-items: center;
   text-align: center;
   font-size: 24px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .form-container {
@@ -33,10 +34,10 @@ body {
   /* align-items: center; */
   border: #ffffff solid 2px;
   border-radius: 1.5rem;
-  min-height: 70vh;
-  /* max-width: 30rem; */
-  min-width: 30rem;
   text-align: center;
+  min-height: 50vh;
+  max-width: max-content;
+  min-width: 30rem;
 }
 
 .container {
@@ -44,14 +45,32 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-top: 4rem;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .label {
-  font-size: 32px;
+  font-size: 18px;
   padding-top: 1rem;
+}
+
+.label-mri {
+  font-size: 48px;
+  font-weight: 600;
+  /* padding-top: 1rem; */
 }
 
 .reply-container {
   display: flex;
   flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

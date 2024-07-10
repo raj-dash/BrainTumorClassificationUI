@@ -53,9 +53,12 @@ function FormContainer({ selectedFile, setSelectedFile, setRender, setTumor }) {
     <>
       <div className="container">
         <div className="form-container">
-          <form action="POST" onSubmit={handleSubmit}>
-            <div>
-              <label className="label">Please enter your image</label>
+          <form action="POST" onSubmit={handleSubmit} className="form">
+            <div className="label-container">
+              <label className="label">Please upload your</label>
+              <label htmlFor="mri" className="label-mri">
+                Brain MRI
+              </label>
             </div>
             <div>
               <input type="file" name="image" onChange={handleFileSelect} />

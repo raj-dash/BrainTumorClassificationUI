@@ -2,7 +2,7 @@ function Title() {
   return (
     <>
       <div className="title">
-        <h1>Brain Tumor Classification</h1>
+        <h1>BRAIN TUMOR CLASSIFICATION</h1>
       </div>
     </>
   );
