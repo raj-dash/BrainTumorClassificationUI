@@ -23,6 +23,7 @@ function App() {
       ) : (
         <Reply
           selectedFile={selectedFile}
+          setSelectedFile={setSelectedFile}
           tumor={tumor}
           setRender={setRender}
         />

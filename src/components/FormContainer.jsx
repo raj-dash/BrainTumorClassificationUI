@@ -1,12 +1,20 @@
 import { useState } from "react";
 
 function FormContainer({ selectedFile, setSelectedFile, setRender, setTumor }) {
+  const [text, setText] = useState("");
+
   function handleFileSelect(event) {
     setSelectedFile(event.target.files[0]);
+    setText("");
   }
 
   async function handleSubmit(event) {
     event.preventDefault();
+
+    if (selectedFile === null) {
+      setText("Please select a valid file");
+      return;
+    }
 
     const fd = new FormData();
     fd.append("image", selectedFile);
@@ -63,10 +71,11 @@ function FormContainer({ selectedFile, setSelectedFile, setRender, setTumor }) {
             <div>
               <input type="file" name="image" onChange={handleFileSelect} />
             </div>
-            <div>
+            <div className="submit-container">
               <button className="button-81" role="button" type="submit">
                 Upload
               </button>
+              <label className="label">{text}</label>
             </div>
           </form>
         </div>

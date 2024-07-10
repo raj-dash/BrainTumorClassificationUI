@@ -45,7 +45,7 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .container {
@@ -67,6 +67,12 @@ body {
   /* color: #ffffff; */
 }
 
+.tumor-label {
+  padding-bottom: 1rem;
+  font-size: 36px;
+  font-weight: 600;
+}
+
 .label-mri {
   font-size: 48px;
   font-weight: 600;
@@ -77,6 +83,7 @@ body {
 .reply-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 /* Designing the file input */
@@ -189,4 +196,18 @@ input[type="file"]::file-selector-button:active {
     font-size: 1.125rem;
     padding: 1rem 2rem;
   }
+}
+
+.submit-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling the image uploaded */
+
+img {
+  max-width: fit-content;
+  max-height: 25rem;
+  border-radius: 2rem;
+  padding: 1rem;
 }
