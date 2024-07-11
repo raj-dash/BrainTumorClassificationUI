@@ -4,6 +4,7 @@ import FormContainer from "./components/FormContainer";
 
 import Title from "./components/Title";
 import Reply from "./components/Reply";
+import BackgroundAnimation from "./components/BackgroundAnimation";
 
 function App() {
   const [render, setRender] = useState("Input");
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <>
+      <BackgroundAnimation />
       <Title />
       {render === "Input" ? (
         <FormContainer
