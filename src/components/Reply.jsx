@@ -1,4 +1,10 @@
-function Reply({ selectedFile, setSelectedFile, tumor, setRender }) {
+function Reply({
+  selectedFile,
+  setSelectedFile,
+  tumor,
+  setRender,
+  probability,
+}) {
   function handleSubmit(event) {
     event.preventDefault();
     setSelectedFile(null);
@@ -15,6 +21,10 @@ function Reply({ selectedFile, setSelectedFile, tumor, setRender }) {
               <label className="label tumor-label" htmlFor="tumor">
                 {tumor}
               </label>
+              <label
+                className="label probability-label"
+                htmlFor="probability"
+              >{`Probability: ${probability}%`}</label>
               <div>
                 <button className="button-81" role="button" type="submit">
                   Go Back

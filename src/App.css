@@ -73,6 +73,13 @@ body {
   font-weight: 600;
 }
 
+.probability-label {
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  font-size: 28px;
+  font-weight: 500;
+}
+
 .label-mri {
   font-size: 48px;
   font-weight: 600;

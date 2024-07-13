@@ -10,6 +10,7 @@ function App() {
   const [render, setRender] = useState("Input");
   const [selectedFile, setSelectedFile] = useState(null);
   const [tumor, setTumor] = useState("");
+  const [probability, setProbability] = useState(null);
 
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
           setSelectedFile={setSelectedFile}
           setRender={setRender}
           setTumor={setTumor}
+          setProbability={setProbability}
         />
       ) : (
         <Reply
@@ -28,6 +30,7 @@ function App() {
           setSelectedFile={setSelectedFile}
           tumor={tumor}
           setRender={setRender}
+          probability={probability}
         />
       )}
     </>

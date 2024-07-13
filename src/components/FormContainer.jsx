@@ -1,6 +1,12 @@
 import { useState } from "react";
 
-function FormContainer({ selectedFile, setSelectedFile, setRender, setTumor }) {
+function FormContainer({
+  selectedFile,
+  setSelectedFile,
+  setRender,
+  setTumor,
+  setProbability,
+}) {
   const [text, setText] = useState("");
 
   function handleFileSelect(event) {
@@ -26,7 +32,10 @@ function FormContainer({ selectedFile, setSelectedFile, setRender, setTumor }) {
         body: fd,
       })
         .then((response) => response.json())
-        .then((data) => getTumor(data["prediction"]));
+        .then((data) => {
+          getTumor(data["prediction"]);
+          setProbability(data["probability"]);
+        });
 
       setRender("Reply");
 
